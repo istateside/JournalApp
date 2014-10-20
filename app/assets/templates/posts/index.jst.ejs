@@ -1,0 +1,7 @@
+<h1>Posts</h1>
+<ul>
+	<% _.each(posts, function(post) {%>
+		<li><%= post.title %><button class=
+			"post-delete" data-id="<%= post.id %>">Delete post!</button></li>
+	<% }); %>
+</ul>
