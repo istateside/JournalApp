@@ -1,9 +1,9 @@
 JournalApp.Routers.PostsRouter = Backbone.Router.extend({
 	routes: {
 		"": "postsIndex",
+		"posts/new": "postsNew",
 		"posts/:id": "postsShow",
-		"posts/:id/edit": "postsEdit",
-		"posts/new": "postsNew"
+		"posts/:id/edit": "postsEdit"
 	},
 
 	postsIndex: function() {

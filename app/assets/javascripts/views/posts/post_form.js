@@ -1,7 +1,6 @@
 JournalApp.Views.PostsForm = Backbone.View.extend({
 	initialize: function() {
 		this.listenTo(this.model, "sync", this.render);
-		// this.listenTo(this.model, "error", this.errors)
 	},
 
 	template: JST['posts/post_form'],
